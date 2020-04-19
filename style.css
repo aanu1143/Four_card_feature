@@ -1,0 +1,157 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    right: 20%;
+}
+
+@media screen and (max-width: 624px) {
+    div.container {
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    right: 3%;
+}
+h2.heading {
+    font-size: 25px;
+}
+h2.headingbold {
+    font-size: 25px;
+}
+}
+
+
+.subcontainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: rgb(69, 69, 70);
+}
+
+.headingbold {
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: rgb(69, 69, 70);
+}
+
+.quote {
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    color: rgb(69, 69, 70);
+}
+
+.cards {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: block;
+    margin: 5%;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardsuper {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    width: 350px;
+    height: 200px;
+    padding: 0.9rem;
+    margin-top: 100px;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardteam {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    width: 350px;
+    padding: 0.9rem;
+    margin: 0.9rem;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardkarma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+    width: 350px;
+    padding: 0.9rem;
+    margin: 0.9rem;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardcalc {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    width: 350px;
+    height: 200px;
+    padding: 0.9rem;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    right: -350px;
+    top: 116px;
+}
+
+.cardcontainer img {
+    display: block;
+    margin-left: auto;
+}
+
+.cardcontainer h2 {
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+.cardcontainer p {
+    font-size: 12px;
+    padding: 0.6rem 0;
+}
+
+
+@media (max-width: 1024px) {
+.cardcontainer div:nth-child(odd) {
+    transform: translateY(0);
+}
+}
+
+@media screen and (max-width: 400px) {
+    div.cards {
+        left: -5%;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    div.cardcalc {
+        position: inherit;
+    }
+}
